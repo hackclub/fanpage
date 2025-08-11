@@ -188,11 +188,24 @@ const TargetCursor: React.FC<TargetCursorProps> = ({
       updateCorners(target);
 
 
-      const onTargetMove = (ev: MouseEvent) => updateCorners(target, ev.clientX, ev.clientY);
-      const onLeave = () => leaveCurrentTarget();
+      const onTargetMove: EventListener = (ev) => {
+        const { clientX, clientY } = ev as MouseEvent;
+        updateCorners(target, clientX, clientY);
+      };
+
+      const onLeave: EventListener = () => {
+        leaveCurrentTarget();
+      };
+
 
       target.addEventListener("mousemove", onTargetMove);
       target.addEventListener("mouseleave", onLeave);
+
+
+      (target as any).__cursorDetach = () => {
+        target.removeEventListener("mousemove", onTargetMove);
+        target.removeEventListener("mouseleave", onLeave);
+      };      
 
 
       (target as any).__cursorDetach = () => {

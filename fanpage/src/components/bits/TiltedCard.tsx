@@ -3,20 +3,21 @@
 import { useRef, useState, type CSSProperties, type ReactNode, type MouseEvent } from "react";
 import { motion, useMotionValue, useSpring, type SpringOptions } from "motion/react";
 import { cn } from "@/lib/cn";
+import { JSX } from "react";
 
 type Props = React.HTMLAttributes<HTMLElement> & {
   children?: ReactNode;
-  // optional “image mode”
+
   imageSrc?: string;
   altText?: string;
 
-  // sizing (optional)
+
   containerHeight?: CSSProperties["height"];
   containerWidth?: CSSProperties["width"];
   imageHeight?: CSSProperties["height"];
   imageWidth?: CSSProperties["width"];
 
-  // effect
+
   scaleOnHover?: number;
   rotateAmplitude?: number;
   glare?: boolean;

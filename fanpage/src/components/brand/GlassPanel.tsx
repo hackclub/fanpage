@@ -1,6 +1,7 @@
 // src/components/brand/GlassPanel.tsx
 import * as React from "react";
 import { cn } from "@/lib/cn";
+import { JSX } from "react";
 
 export function GlassPanel({
   className,

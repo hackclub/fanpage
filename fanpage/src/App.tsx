@@ -19,7 +19,7 @@ import {
   Github,
   ShieldCheck,
 } from "lucide-react";
-
+import { JSX } from "react";
 import TiltedCard from "@/components/bits/TiltedCard";
 import TargetCursor from "@/components/bits/TargetCursor";
 import CircularText from "@/components/bits/CircularText";
@@ -90,8 +90,12 @@ export default function App(): JSX.Element {
       <section id="top" className="relative z-40 h-[100svh] px-2 sm:px-10 flex items-center" aria-labelledby="heroHeading">
         <div className="mx-auto w-full max-w-5xl">
           <div className="relative rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur px-3 sm:px-10 py-6 sm:py-14 overflow-hidden">
-            <div className="absolute -left-10 -top-10 opacity-70">
-              <CircularText text="build · love · ship · reward ·" diameter={180} className="text-white/30 animate-[spin_30s_linear_infinite]" />
+            <div className="absolute -left-10 -top-10 opacity-70 w-[180px] h-[180px]">
+              <CircularText
+                text="build · love · ship · reward ·"
+                spinDuration={30}
+                className="w-full h-full text-white/30"
+              />
             </div>
 
             <div className="text-center relative z-10">

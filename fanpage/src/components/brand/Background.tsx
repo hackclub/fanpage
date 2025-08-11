@@ -1,5 +1,6 @@
 
 import * as React from "react";
+import { JSX } from "react";
 
 export default function Background(): JSX.Element {
   return (
