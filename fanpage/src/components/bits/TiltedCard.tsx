@@ -2,7 +2,7 @@
 
 import { useRef, useState, type CSSProperties, type ReactNode, type MouseEvent } from "react";
 import { motion, useMotionValue, useSpring, type SpringOptions } from "motion/react";
-import { cn } from "@/lib/cn";
+import { cn } from "@/lib/utils";
 import { JSX } from "react";
 
 type Props = React.HTMLAttributes<HTMLElement> & {
