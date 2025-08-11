@@ -1,68 +1,43 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+html, body, #root { height: 100%; }
+body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; color-scheme: dark; }
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.bg-photo-img {
+  background-image: url("/bg/bg.png");
+  background-size: cover;
+  background-position: 65% center; 
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.bg-tint {
+  background: radial-gradient(1200px 900px at 62% 50%, rgba(19, 19, 19, 0.38), transparent 65%),
+              linear-gradient(160deg, rgba(109,40,217,.38), rgba(236,72,153,.38));
+  mix-blend-mode: multiply;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+.grain {
+  background-image: url("/grain.svg");
+  background-repeat: repeat;
+  background-size: 140px 140px;
+  mix-blend-mode: screen;
+  opacity: .38;                         
+  filter: brightness(190%) contrast(220%);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.grain-2 {
+  background-image: url("/grain.svg");
+  background-repeat: repeat;
+  background-size: 90px 90px;
+  mix-blend-mode: screen;
+  opacity: .22;
+  filter: brightness(190%) contrast(220%);
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.vignette {
+  background: radial-gradient(ellipse 80% 65% at 50% 50%, transparent 80%, rgba(0,0,0,0.22) 100%);
+  backdrop-filter: blur(0px);
+  pointer-events: none;
 }
