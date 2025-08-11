@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html { scroll-behavior: smooth; }
 html, body, #root { height: 100%; }
 body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial; color-scheme: dark; }
 
@@ -22,7 +24,7 @@ body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Ro
   background-repeat: repeat;
   background-size: 140px 140px;
   mix-blend-mode: screen;
-  opacity: .38;                         
+  opacity: .38;                        
   filter: brightness(190%) contrast(220%);
 }
 
