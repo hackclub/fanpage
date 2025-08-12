@@ -1,4 +1,3 @@
-
 import Background from "@/components/brand/Background";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -87,7 +86,16 @@ export default function App(): JSX.Element {
       </header>
 
 
-      <section id="top" className="relative z-40 h-[100svh] px-2 sm:px-10 flex items-center" aria-labelledby="heroHeading">
+      <div role="status" aria-live="polite" className="relative z-40 px-3 sm:px-10">
+        <div className="mx-auto w-full max-w-5xl mt-2">
+          <div className="rounded-xl border border-amber-400/30 bg-amber-500/10 px-3 py-2 text-amber-200 text-sm flex items-center justify-center gap-2">
+            <Clock className="w-4 h-4" />
+            <span>Heads up: Launching on <strong>Sep 1st</strong>!</span>
+          </div>
+        </div>
+      </div>
+
+      <section id="top" className="relative z-30 h-[85svh] px-2 sm:px-6 flex items-center" aria-labelledby="heroHeading">
         <div className="mx-auto w-full max-w-5xl">
           <div className="relative rounded-2xl border border-white/10 bg-white/[0.02] backdrop-blur px-3 sm:px-10 py-6 sm:py-14 overflow-hidden">
             <div className="absolute -left-10 -top-10 opacity-70 w-[180px] h-[180px]">
@@ -116,9 +124,7 @@ export default function App(): JSX.Element {
                 </span>
               </h1>
 
-              <p className="mt-6 text-sm sm:text-lg text-gray-200/90 max-w-3xl mx-auto px-2">
-                Pick a snack, game, or hobby you adore. Ship a project about it. When you’re done, you can claim that very thing as a reward.
-              </p>
+              <p className="mt-7 text-sm sm:text-lg text-gray-200/90 max-w-3xl mx-auto px-2">Launching Sep 1st!</p>
 
               <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3">
                 <Button size="lg" asChild data-cursor-snap className="w-full sm:w-auto bg-violet-600 hover:bg-violet-700 text-white shadow-lg shadow-violet-600/20 px-6 py-4 text-lg font-bold" aria-label="Get Started">
@@ -134,7 +140,7 @@ export default function App(): JSX.Element {
       </section>
 
 
-      <main className="relative z-40 flex-1 px-2 sm:px-10 pb-16">
+      <main className="relative z-40 flex-1 px-2 sm:px-10 pb-16 pt-12">
 
         <section id="how-it-works" aria-labelledby="howItWorksHeading" className="mx-auto w-full max-w-6xl scroll-mt-24 py-12">
           <h2 id="howItWorksHeading" className="text-3xl md:text-4xl font-semibold tracking-tight text-white text-center">How it works</h2>
@@ -307,9 +313,18 @@ export default function App(): JSX.Element {
               <AccordionContent className="text-gray-200/90 space-y-2">
                 <ul className="list-disc list-inside space-y-1">
                   <li>Yes it is recommended to join the {" "}
-                  <a className="underline decoration-dotted" href="https://hackatime.hackclub.com/" target="_blank" rel="noreferrer">
-                    Hackatime
-                  </a> slack!</li>
+                  <a className="underline decoration-dotted" href="https://app.slack.com/client/T0266FRGM/C09A37XECJV" target="_blank" rel="noreferrer">
+                    Hackclub Slack!
+                  </a></li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="q8" className="px-4">
+              <AccordionTrigger className="text-left">When does this launch?</AccordionTrigger>
+              <AccordionContent className="text-gray-200/90 space-y-2">
+                <ul className="list-disc list-inside space-y-1">
+                  <li>Sep 1st, 2025!</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>

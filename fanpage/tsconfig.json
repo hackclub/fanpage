@@ -12,7 +12,9 @@
     },
     "strict": true,
     "noEmit": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "allowJs": false,
+    "isolatedModules": true,
   },
   "include": ["src"]
 }

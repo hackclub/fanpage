@@ -6,6 +6,7 @@
 
 Checkout: https://fanpage-ysws.vercel.app/
 
+LAUNCHING SEP 1st!!!
 
 Repo: https://github.com/nirvaankohli/fanpage-ysws
 
