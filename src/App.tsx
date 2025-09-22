@@ -134,7 +134,7 @@ export default function App(): JSX.Element {
           >
             <Clock className="w-[18px] h-[18px] max-[500px]:w-[20px] max-[500px]:h-[20px]" />
             <span>
-              Heads up: Launching on <strong>Sep 1st</strong>!
+              Launching Soon! Stay tuned!
             </span>
           </div>
         </div>
@@ -277,7 +277,7 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Ship a polished project (page, prototype, script, video, NO AI SLOP). It should be about the thing you love, the thing you want, and it should be <strong>finished</strong>.
+                Ship a project that celebrates that thing. A website, app, game, etc. However the AI usage should be less than 30%, there should be a functioning demo, and a public Github repository of the source code of your project.
               </CardContent>
             </TiltedCard>
 
@@ -334,7 +334,7 @@ export default function App(): JSX.Element {
                   <Github className="w-[20px] h-[20px]" /> README (setup/usage) + license.
                 </p>
                 <p className="inline-flex items-center gap-2">
-                  <LinkIcon className="w-[20px] h-[20px]" /> Demo link (site/video/hosted build) must load.
+                  <LinkIcon className="w-[20px] h-[20px]" /> Demo link (ex. site) must load.
                 </p>
               </CardContent>
             </Card>
@@ -374,7 +374,7 @@ export default function App(): JSX.Element {
               </CardHeader>
               <CardContent className="pt-0 text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
                 <p>Not “tiny” or “one week only”—you’ve got time. Still, keep scope coherent enough to <strong>finish</strong> and demo.</p>
-                <p>Make sure it follows hackclub's COC: Friendly, legal, and safe-for-kids.</p>
+                <p>Make sure it follows hackclub's COC: Friendly, legal, and safe-for-kids. You also need to be 18 or younger.</p>
               </CardContent>
             </Card>
           </div>
@@ -478,7 +478,7 @@ export default function App(): JSX.Element {
               </AccordionTrigger>
               <AccordionContent className="text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Sep 1st, 2025!</li>
+                  <li>Hang tight! We'll announce the launch date soon.</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
