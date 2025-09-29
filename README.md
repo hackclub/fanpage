@@ -4,6 +4,10 @@
 > Ship a small project dedicated to something you love (snack/game/hobby/etc.).  
 > When you finish, you get that very thing shipped as a reward
 
+Checkout: https://fanpage-ysws.vercel.app/
+
+LAUNCHING SEP 1st!!!
+
 Repo: https://github.com/nirvaankohli/fanpage-ysws
 
 ---
