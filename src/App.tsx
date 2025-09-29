@@ -203,7 +203,7 @@ export default function App(): JSX.Element {
               </div>
 
               <p className="mt-6 text-base sm:text-lg text-gray-200/90 max-w-3xl mx-auto px-2 max-[500px]:mt-[16px] max-[500px]:text-[18px]">
-                Launching Sep 1st!
+                Launching Soon!
               </p>
 
               {/* Hero CTAs with explicit pixel sizes on mobile */}
