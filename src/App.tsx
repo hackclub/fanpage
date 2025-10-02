@@ -172,7 +172,7 @@ export default function App(): JSX.Element {
                 "
               >
                 <Sparkles className="w-[18px] h-[18px]" />
-                Ship a project about something you love. Get that very thing.
+                Ship a project about something you're a fan of. Get that very thing.
               </span>
 
               {/* Heading already stacks on mobile; keep desktop same */}
@@ -210,7 +210,7 @@ export default function App(): JSX.Element {
               <div className="mt-8 flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 max-[500px]:mt-[16px] max-[500px]:gap-[12px]">
                 <Button
                   size="lg"
-                  asChild
+                  asChild 
                   data-cursor-snap
                   className="
                     w-full sm:w-auto bg-violet-600 hover:bg-violet-700 text-white shadow-lg shadow-violet-600/25 px-7 py-6 text-xl sm:text-base sm:py-4 font-semibold rounded-2xl
@@ -266,7 +266,7 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Pick a snack, game, hobby—anything you’re into. Then think about what <i>you</i> can create as a tribute to that thing.
+                Pick a fandom you're part of (ex. a game, show, hobby, etc.). Then build something for someone in your fandom.
               </CardContent>
             </TiltedCard>
 
@@ -277,7 +277,7 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Ship a project that celebrates that thing. A website, app, game, etc. However the AI usage should be less than 30%, there should be a functioning demo, and a public Github repository of the source code of your project.
+                Build a project for your fandom. A website, app, game, etc. Be creative! A good example is <a className="underline decoration-dotted" href="https://gearoid.me/pokemon/" target="_blank" rel="noreferrer">Who's That Pokemon?</a>
               </CardContent>
             </TiltedCard>
 
@@ -288,10 +288,10 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Track with{" "}
+                Track your time with{" "}
                 <a className="underline decoration-dotted" href="https://hackatime.hackclub.com/" target="_blank" rel="noreferrer">
                   Hackatime
-                </a>. Please do not try to fabricate or bot the amount of hours you log. We don't like to ban people.
+                </a>. More time spent on your project, the bigger the reward!
               </CardContent>
             </TiltedCard>
 
@@ -350,18 +350,18 @@ export default function App(): JSX.Element {
                   <a className="underline decoration-dotted" href="https://hackatime.hackclub.com/" target="_blank" rel="noreferrer">Hackatime</a>.
                 </p>
                 <p>No fraud: no fabricated heartbeats.</p>
-                <p>A Maximum of 50 hours for a 200 dollar prize</p>
+                <p>A maximum of 30 hours for a 100 dollar prize</p>
               </CardContent>
             </Card>
 
             <Card className="border-white/10 bg-white/[0.04] backdrop-blur max-[500px]:rounded-[16px]" data-cursor-snap>
               <CardHeader className="space-y-1.5">
                 <CardTitle className="flex items-center gap-2 text-xl md:text-2xl max-[500px]:text-[20px]">
-                  <Hammer className="w-[22px] h-[22px] text-violet-300" /> No vibecoding-only
+                  <Hammer className="w-[22px] h-[22px] text-violet-300" /> No AI slop
                 </CardTitle>
               </CardHeader>
               <CardContent className="pt-0 text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
-                <p>AI assist is okay, but <strong>not AI-only</strong>. Show your work via commits, notes, and spend time on your README.</p>
+                <p><strong>We won't accept vibecoded/AI-made projects.</strong> Show your work via commits, notes, and spend time on your README.</p>
                 <p>Attribute open-source & third-party assets properly.</p>
               </CardContent>
             </Card>
@@ -401,6 +401,28 @@ export default function App(): JSX.Element {
               max-[500px]:mt-[16px]
             "
           >
+            <AccordionItem value="q0" className="px-4 max-[500px]:px-[12px]">
+              <AccordionTrigger className="text-left max-[500px]:text-[18px] max-[500px]:py-[14px]">
+                What type of projects should I make?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-200/90 max-[500px]:text-[16px]">
+                Your project should help someone in your fandom. It shouldn't be a basic website with a bunch of PNGs, but something interactive or useful.<br />
+                <br />
+                Examples:<br />
+                <ul>
+                  <li>- Trivia game about your fandom (ex. <a className="underline decoration-dotted" href="https://gearoid.me/pokemon/">Who's That Pokemon?</a>)</li>
+                  <li>- Interactive maps/trees (ex. <a className="underline decoration-dotted" href="https://github.com/lukephelan/web-of-westeros">Game of Thrones family tree</a>)</li>
+                  <li>- Star Wars api (ex. <a className="underline decoration-dotted" href="https://swapi.dev/">swapi.dev</a>)</li>
+                </ul>
+                  (This isn't a definitive list, just examples! Go wild with what you build, and be creative!)
+                <br /><br />
+                Avoid:
+                <ul>
+                  <li>- Simple static sites</li>
+                  <li>- Wikis or forums - those are everywhere and likely already exist for your fandom!</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
             <AccordionItem value="q1" className="px-4 max-[500px]:px-[12px]">
               <AccordionTrigger className="text-left max-[500px]:text-[18px] max-[500px]:py-[14px]">
                 What counts as “finished”?
@@ -424,7 +446,7 @@ export default function App(): JSX.Element {
                 Can I use AI tools?
               </AccordionTrigger>
               <AccordionContent className="text-gray-200/90 max-[500px]:text-[16px]">
-                Yes—as an assistant. Not AI-only. Keep meaningful personal work and attribute any generated assets when relevant.
+                Yes, but avoid heavy reliance on it. Not AI-only. Keep meaningful personal work and attribute any generated assets when relevant. Less than 30% of your project should be AI.
               </AccordionContent>
             </AccordionItem>
 
