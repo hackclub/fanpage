@@ -134,7 +134,7 @@ export default function App(): JSX.Element {
           >
             <Clock className="w-[18px] h-[18px] max-[500px]:w-[20px] max-[500px]:h-[20px]" />
             <span>
-              Launching Soon! Stay tuned!
+              Launching Oct 2!
             </span>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function App(): JSX.Element {
               </div>
 
               <p className="mt-6 text-base sm:text-lg text-gray-200/90 max-w-3xl mx-auto px-2 max-[500px]:mt-[16px] max-[500px]:text-[18px]">
-                Launching Soon!
+                Launching Oct 2!
               </p>
 
               {/* Hero CTAs with explicit pixel sizes on mobile */}
@@ -500,7 +500,7 @@ export default function App(): JSX.Element {
               </AccordionTrigger>
               <AccordionContent className="text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Hang tight! We'll announce the launch date soon.</li>
+                  <li>October Second!</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
