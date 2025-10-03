@@ -266,7 +266,7 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Pick a fandom you're part of (ex. a game, show, hobby, etc.). Then build something for someone in your fandom.
+                Pick a fandom you're part of (ex. a game, show, hobby, etc.). Then think of something to build for someone in your fandom. Share your idea in the <a target="_blank" rel="noreferrer" href="https://hackclub.slack.com/archives/C09A37XECJV" className="underline decoration-dotted">#fanpage</a> channel.
               </CardContent>
             </TiltedCard>
 
