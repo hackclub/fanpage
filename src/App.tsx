@@ -73,8 +73,8 @@ export default function App(): JSX.Element {
             aria-label="Submit"
           >
             <a
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              target="_blank"
+              href="https://submit.hackclub.com/fanpage"
+              target="_blank" 
               rel="noopener noreferrer"
             >
               Submit
@@ -134,7 +134,7 @@ export default function App(): JSX.Element {
           >
             <Clock className="w-[18px] h-[18px] max-[500px]:w-[20px] max-[500px]:h-[20px]" />
             <span>
-              Launching Soon! Stay tuned!
+              Ends October 17th!!!
             </span>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function App(): JSX.Element {
               </div>
 
               <p className="mt-6 text-base sm:text-lg text-gray-200/90 max-w-3xl mx-auto px-2 max-[500px]:mt-[16px] max-[500px]:text-[18px]">
-                Launching Soon!
+                Ends October 17th.
               </p>
 
               {/* Hero CTAs with explicit pixel sizes on mobile */}
