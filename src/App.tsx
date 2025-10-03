@@ -500,7 +500,7 @@ export default function App(): JSX.Element {
               </AccordionTrigger>
               <AccordionContent className="text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
                 <ul className="list-disc list-inside space-y-1">
-                  <li>Hang tight! We'll announce the launch date soon.</li>
+                  <li>October Second!</li>
                 </ul>
               </AccordionContent>
             </AccordionItem>
