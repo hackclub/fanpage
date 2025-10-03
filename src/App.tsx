@@ -73,8 +73,8 @@ export default function App(): JSX.Element {
             aria-label="Submit"
           >
             <a
-              href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              target="_blank"
+              href="https://submit.hackclub.com/fanpage"
+              target="_blank" 
               rel="noopener noreferrer"
             >
               Submit
@@ -134,7 +134,7 @@ export default function App(): JSX.Element {
           >
             <Clock className="w-[18px] h-[18px] max-[500px]:w-[20px] max-[500px]:h-[20px]" />
             <span>
-              Launching Oct 2!
+              Ends October 17th!!!
             </span>
           </div>
         </div>
@@ -203,7 +203,7 @@ export default function App(): JSX.Element {
               </div>
 
               <p className="mt-6 text-base sm:text-lg text-gray-200/90 max-w-3xl mx-auto px-2 max-[500px]:mt-[16px] max-[500px]:text-[18px]">
-                Launching Oct 2!
+                Ends October 17th.
               </p>
 
               {/* Hero CTAs with explicit pixel sizes on mobile */}
@@ -266,7 +266,7 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Pick a fandom you're part of (ex. a game, show, hobby, etc.). Then build something for someone in your fandom.
+                Pick a fandom you're part of (ex. a game, show, hobby, etc.). Then think of something to build for someone in your fandom. Share your idea in the <a target="_blank" rel="noreferrer" href="https://hackclub.slack.com/archives/C09A37XECJV" className="underline decoration-dotted">#fanpage</a> channel.
               </CardContent>
             </TiltedCard>
 
