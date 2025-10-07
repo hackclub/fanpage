@@ -22,6 +22,7 @@ import { JSX } from "react";
 import TiltedCard from "@/components/bits/TiltedCard";
 import TargetCursor from "@/components/bits/TargetCursor";
 import CircularText from "@/components/bits/CircularText";
+import UserTag from "@/components/ui/UserTag";
 
 export default function App(): JSX.Element {
   return (
@@ -59,7 +60,7 @@ export default function App(): JSX.Element {
         {/* Nav: larger buttons with explicit pixel sizes, desktop unchanged */}
         <nav
           className="
-            flex items-center gap-1 sm:gap-2 w-auto overflow-x-auto overscroll-x-contain scrollbar-none [-ms-overflow-style:'none'] [scrollbar-width:'none']
+            flex items-center gap-1 sm:gap-2 w-auto overflow-hidden overscroll-x-contain scrollbar-none [-ms-overflow-style:'none'] [scrollbar-width:'none']
             max-[500px]:w-full max-[500px]:grid max-[500px]:grid-cols-2 max-[500px]:gap-[12px] max-[500px]:overflow-visible
           "
         >
@@ -172,10 +173,9 @@ export default function App(): JSX.Element {
                 "
               >
                 <Sparkles className="w-[18px] h-[18px]" />
-                Ship a project about something you're a fan of. Get that very thing.
+                Ship a project about something you love. Get that merch related to that very thing.
               </span>
 
-              {/* Heading already stacks on mobile; keep desktop same */}
               <div className="mx-auto w-[85%] sm:w-auto max-[500px]:w-[94%]">
                 <h1
                   id="heroHeading"
@@ -302,7 +302,7 @@ export default function App(): JSX.Element {
                 </CardTitle>
               </CardHeader>
               <CardContent className="mt-2 p-0 text-base md:text-lg text-gray-300 max-[500px]:text-[16px]">
-                Ship your project, and wait for it to be reviewed. If it meets the bar, you’ll get that very thing you built about.
+                Ship your project, and wait for it to be reviewed. If it meets the bar, you’ll get merch related to that very thing you built about.
               </CardContent>
             </TiltedCard>
           </div>
@@ -501,6 +501,22 @@ export default function App(): JSX.Element {
               <AccordionContent className="text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
                 <ul className="list-disc list-inside space-y-1">
                   <li>October Second!</li>
+                </ul>
+              </AccordionContent>
+            </AccordionItem>
+
+            <AccordionItem value="q9" className="px-4 max-[500px]:px-[12px]">
+              <AccordionTrigger className="text-left max-[500px]:text-[18px] max-[500px]:py-[14px]">
+                I decided on my idea, now what?
+              </AccordionTrigger>
+              <AccordionContent className="text-gray-200/90 space-y-2 max-[500px]:text-[16px]">
+                <ul className="list-disc list-inside space-y-1">
+                    <li>
+                      Share your idea with <UserTag href="https://hackclub.slack.com/team/U07UKLZT9N1">@Nirvaan</UserTag>, 
+                      <UserTag href="https://hackclub.slack.com/team/U04QD71QWS0">@manitej</UserTag>, or post it in the 
+                      <UserTag href="https://hackclub.slack.com/archives/C09A37XECJV">#fanpage</UserTag> channel on Hack Club Slack for approval.
+                    </li>
+
                 </ul>
               </AccordionContent>
             </AccordionItem>
